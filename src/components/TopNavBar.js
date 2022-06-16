@@ -4,12 +4,13 @@ import React from 'react';
 import HamburgerMenu from './HamburgerMenu';
 import NavMenu from './NavMenu';
 
-const TopNavBar = () => {
+const TopNavBar = ({onClick}) => {
   const [isMobileSize] = useMediaQuery('(min-width: 550px)');
+
   return (
     <Flex justifyContent="space-between">
       <Heading style={{whiteSpace: 'nowrap'}} fontSize="4xl">A Donut Store</Heading>
-      {isMobileSize ? <NavMenu /> : <HamburgerMenu />}
+      {isMobileSize ? <NavMenu onClick={onClick} /> : <HamburgerMenu onClick={onClick} />}
     </Flex>
   );
 };

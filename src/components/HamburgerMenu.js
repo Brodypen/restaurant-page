@@ -11,7 +11,7 @@ import {
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { useMediaQuery } from '@chakra-ui/react';
 import { FaBars, FaHome, FaBook, FaInfo, FaGithub } from 'react-icons/fa';
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ onClick }) => {
   const [isMobileSize] = useMediaQuery('(min-width: 550px)');
   const [moveContact] = useMediaQuery('(min-width: 680px)');
   return (
@@ -23,15 +23,22 @@ const HamburgerMenu = () => {
             <></>
           ) : (
             <MenuGroup title="Navigation" textAlign="left">
-              {' '}
-              <MenuItem icon={<FaInfo />}>Contact</MenuItem>
+              <MenuItem icon={<FaInfo />} onClick={() => onClick('Contact')}>
+                Contact
+              </MenuItem>
             </MenuGroup>
           )
         ) : (
           <MenuGroup title="Navigation" textAlign="left">
-            <MenuItem icon={<FaHome />}>Home</MenuItem>
-            <MenuItem icon={<FaBook />}>Menu</MenuItem>
-            <MenuItem icon={<FaInfo />}>Contact</MenuItem>
+            <MenuItem icon={<FaHome />} onClick={() => onClick('Home')}>
+              Home
+            </MenuItem>
+            <MenuItem icon={<FaBook />} onClick={() => onClick('Menu')}>
+              Menu
+            </MenuItem>
+            <MenuItem icon={<FaInfo />} onClick={() => onClick('Contact')}>
+              Contact
+            </MenuItem>
           </MenuGroup>
         )}
 
