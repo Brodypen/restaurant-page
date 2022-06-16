@@ -9,19 +9,34 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import { useMediaQuery } from '@chakra-ui/react';
 import { FaBars, FaHome, FaBook, FaInfo, FaGithub } from 'react-icons/fa';
 const HamburgerMenu = () => {
+  const [isMobileSize] = useMediaQuery('(min-width: 480px)');
+  const [moveContact] = useMediaQuery('(min-width: 680px)');
   return (
     <Menu isLazy>
       <MenuButton as={IconButton} icon={<FaBars />} />
       <MenuList>
-        <MenuGroup title="Navigation" textAlign="left">
-          <MenuItem icon={<FaHome />}>Home</MenuItem>
-          <MenuItem icon={<FaBook />}>Menu</MenuItem>
-          <MenuItem icon={<FaInfo />}>Contact</MenuItem>
-        </MenuGroup>
+        {isMobileSize ? (
+          moveContact ? (
+            <></>
+          ) : (
+            <MenuGroup title="Navigation" textAlign="left">
+              {' '}
+              <MenuItem icon={<FaInfo />}>Contact</MenuItem>
+            </MenuGroup>
+          )
+        ) : (
+          <MenuGroup title="Navigation" textAlign="left">
+            <MenuItem icon={<FaHome />}>Home</MenuItem>
+            <MenuItem icon={<FaBook />}>Menu</MenuItem>
+            <MenuItem icon={<FaInfo />}>Contact</MenuItem>
+          </MenuGroup>
+        )}
+
         <MenuGroup title="Misc" textAlign="left">
-            <ColorModeSwitcher />
+          <ColorModeSwitcher />
           <Link
             href="https://github.com/FrostandIce/restaurant-page"
             isExternal

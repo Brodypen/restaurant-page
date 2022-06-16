@@ -1,15 +1,16 @@
-import { Button, HStack, Link, Menu, Box, Spacer } from '@chakra-ui/react';
+import { Button, HStack} from '@chakra-ui/react';
 import React from 'react';
-import { FaHome, FaBook, FaInfo, FaGithub } from 'react-icons/fa';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import { FaHome, FaBook, FaInfo} from 'react-icons/fa';
+import { useMediaQuery } from '@chakra-ui/react';
 import HamburgerMenu from './HamburgerMenu';
 const NavMenu = () => {
+      const [moveContact] = useMediaQuery('(min-width: 680px)');
   return (
     <div>
       <HStack>
         <Button leftIcon={<FaHome />}>Home</Button>
         <Button leftIcon={<FaBook />}>Menu</Button>
-        <Button leftIcon={<FaInfo />}>Contact</Button>
+       {moveContact ?  <Button leftIcon={<FaInfo />}>Contact</Button>: <></> }
         <HamburgerMenu/>
       </HStack>
     </div>
