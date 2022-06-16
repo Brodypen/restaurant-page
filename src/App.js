@@ -1,18 +1,18 @@
 import React from 'react';
 import {
   ChakraProvider,
-  Box,
+  Flex,
   theme,
 } from '@chakra-ui/react';
-import HamburgerMenu from './components/HamburgerMenu';
+import TopNavBar from './components/TopNavBar';
 
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <HamburgerMenu/>
-      </Box>
+      <Flex direction="column" justify="center" padding={5}>
+        <TopNavBar></TopNavBar>
+      </Flex>
     </ChakraProvider>
   );
 }
