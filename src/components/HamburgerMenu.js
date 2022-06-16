@@ -6,7 +6,7 @@ import {
   MenuList,
   MenuItem,
   MenuGroup,
-  Button,
+  Link,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { FaBars, FaHome, FaBook, FaInfo, FaGithub } from 'react-icons/fa';
@@ -22,7 +22,9 @@ const HamburgerMenu = () => {
         </MenuGroup>
         <MenuGroup title="Misc" textAlign="left">
           <ColorModeSwitcher />
-          <MenuItem icon={<FaGithub />}>GitHub</MenuItem>
+          <Link href="https://github.com/FrostandIce/restaurant-page" isExternal>
+            <MenuItem icon={<FaGithub />}>GitHub</MenuItem>
+          </Link>
         </MenuGroup>
       </MenuList>
     </Menu>
