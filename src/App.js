@@ -1,11 +1,12 @@
 import React from 'react';
+import '@fontsource/raleway/500.css';
+import '@fontsource/lusitana/700.css'
 import {
   ChakraProvider,
   Flex,
-  theme,
 } from '@chakra-ui/react';
 import TopNavBar from './components/TopNavBar';
-
+import theme from './theme'
 
 function App() {
   return (
