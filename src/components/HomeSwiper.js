@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 // Donut Pics
 import Donut1 from '../pics/Donut1.jpg';
 import Donut2 from '../pics/Donut2.jpg';
@@ -21,9 +21,7 @@ import MDonut1 from '../pics/MDonut1.jpg';
 import MDonut2 from '../pics/MDonut2.jpg';
 import MDonut3 from '../pics/MDonut3.jpg';
 import MDonut4 from '../pics/MDonut4.jpg';
-import { Image,}
-from "@chakra-ui/react";
-import { useMediaQuery } from "@chakra-ui/react";
+import { useMediaQuery, Text } from "@chakra-ui/react";
 const HomeSwiper = () => {
   const [isMobile] = useMediaQuery('(max-width: 680px)')
   const donutsPics = [Donut1, Donut2, Donut3, Donut4];
@@ -35,27 +33,52 @@ const HomeSwiper = () => {
   }
   return (
     <>
-      <Swiper   
-        style={{width: '100%', height: '100%'}}
+      <Swiper
+        style={{ width: '100%', height: '100%' }}
         spaceBetween={30}
-        effect={"fade"}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination]}
-        className="swiper">
+        modules={[Autoplay, Navigation, Pagination]}
+        className="swiper"
+      >
         <SwiperSlide>
-          <Image src={donutsPics[0]} alt=""/>
+          <img src={donutsPics[0]} alt="" />
+          <Text
+          >
+            Keep calm and eat a doughnut
+          </Text>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={donutsPics[1]} alt=""/>
+          <img src={donutsPics[1]} alt="" />
+
+          <Text
+            // style={{textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'}}
+            
+          >
+            Donut go breaking my heart<br/>I couldn't if I fried
+          </Text>
         </SwiperSlide>
         <SwiperSlide>
           <img src={donutsPics[2]} alt="" />
+          <Text
+          >
+            Donut worry, I'm fine!
+          </Text>
         </SwiperSlide>
         <SwiperSlide>
           <img src={donutsPics[3]} alt="" />
+
+            <Text
+            >
+              Get me a Donut Bobby!
+          </Text>
         </SwiperSlide>
       </Swiper>
     </>

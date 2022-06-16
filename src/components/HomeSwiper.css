@@ -4,4 +4,22 @@
 }
 .swiper-slide img {
     width: 100vw;
+    opacity: 0.9;
+    background-color: white;
+}
+.swiper-slide p {
+    -webkit-text-stroke: 1px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+@media only screen and (max-width: 680px) {
+        .swiper-slide p {
+            font-size: 3rem;
+            transform: translate(-50%,-100%);
+        }
 }
