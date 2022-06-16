@@ -21,8 +21,11 @@ const HamburgerMenu = () => {
           <MenuItem icon={<FaInfo />}>Contact</MenuItem>
         </MenuGroup>
         <MenuGroup title="Misc" textAlign="left">
-          <ColorModeSwitcher />
-          <Link href="https://github.com/FrostandIce/restaurant-page" isExternal>
+            <ColorModeSwitcher />
+          <Link
+            href="https://github.com/FrostandIce/restaurant-page"
+            isExternal
+          >
             <MenuItem icon={<FaGithub />}>GitHub</MenuItem>
           </Link>
         </MenuGroup>
