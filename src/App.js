@@ -7,13 +7,15 @@ import {
 } from '@chakra-ui/react';
 import TopNavBar from './components/TopNavBar';
 import theme from './theme'
+import HomeSwiper from './components/HomeSwiper';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Flex direction="column" justify="center" padding={5}>
-        <TopNavBar></TopNavBar>
+      <Flex direction="column" justify="center" padding={5} >
+        <TopNavBar />
       </Flex>
+      <HomeSwiper />
     </ChakraProvider>
   );
 }

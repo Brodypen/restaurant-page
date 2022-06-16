@@ -1,0 +1,7 @@
+.swiper {
+    height: 95vh !important;
+    z-index: 0 !important;
+}
+.swiper-slide img {
+    width: 100vw;
+}
