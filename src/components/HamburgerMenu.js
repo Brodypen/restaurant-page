@@ -12,7 +12,7 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { useMediaQuery } from '@chakra-ui/react';
 import { FaBars, FaHome, FaBook, FaInfo, FaGithub } from 'react-icons/fa';
 const HamburgerMenu = () => {
-  const [isMobileSize] = useMediaQuery('(min-width: 480px)');
+  const [isMobileSize] = useMediaQuery('(min-width: 550px)');
   const [moveContact] = useMediaQuery('(min-width: 680px)');
   return (
     <Menu isLazy>

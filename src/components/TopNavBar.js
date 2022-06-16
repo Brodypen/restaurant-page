@@ -5,7 +5,7 @@ import HamburgerMenu from './HamburgerMenu';
 import NavMenu from './NavMenu';
 
 const TopNavBar = () => {
-  const [isMobileSize] = useMediaQuery('(min-width: 480px)');
+  const [isMobileSize] = useMediaQuery('(min-width: 550px)');
   return (
     <Flex justifyContent="space-between">
       <Heading style={{whiteSpace: 'nowrap'}} fontSize="4xl">A Donut Store</Heading>

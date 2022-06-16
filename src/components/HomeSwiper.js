@@ -23,7 +23,7 @@ import MDonut3 from '../pics/MDonut3.jpg';
 import MDonut4 from '../pics/MDonut4.jpg';
 import { useMediaQuery, Text } from "@chakra-ui/react";
 const HomeSwiper = () => {
-  const [isMobile] = useMediaQuery('(max-width: 680px)')
+  const [isMobile] = useMediaQuery('(max-width: 1000px)')
   const donutsPics = [Donut1, Donut2, Donut3, Donut4];
   if(isMobile){
     donutsPics[0] = MDonut1;
