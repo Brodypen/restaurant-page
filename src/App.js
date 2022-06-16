@@ -19,8 +19,18 @@ function App() {
     const [contact, setContact] = useBoolean();
 
       function onClickLog(name) {
-        console.log('Hey' + name);
+                  setHome.off();
+                  setMenu.off();
+                  setContact.off();
+        if(name === "Home"){
+          setHome.toggle();
+        } else if(name === "Menu"){
+          setMenu.toggle();
+        } else {
+          setContact.toggle();
+        }
       }
+
   return (
     <ChakraProvider theme={theme}>
       <Flex direction="column" justify="center" padding={5}>
@@ -28,7 +38,7 @@ function App() {
       </Flex>
       {home ? <Home /> : <></>}
       {menu ? <Menu /> : <></>}
-      {contact ? <setContact /> : <></>}
+      {contact ? <Contact /> : <></>}
       <Box height="3vh" width="auto" />
     </ChakraProvider>
   );
