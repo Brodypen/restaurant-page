@@ -57,12 +57,9 @@ const HomeSwiper = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={donutsPics[1]} alt="" />
-
-          <Text
-            // style={{textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'}}
-            
+          <Text      
           >
-            Donut go breaking my heart<br/>I couldn't if I fried
+            Donut go breaking my heart<br/>(I couldn't if I fried)
           </Text>
         </SwiperSlide>
         <SwiperSlide>

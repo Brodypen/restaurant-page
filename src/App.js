@@ -4,10 +4,11 @@ import '@fontsource/lusitana/700.css'
 import {
   ChakraProvider,
   Flex,
+  Box,
 } from '@chakra-ui/react';
 import TopNavBar from './components/TopNavBar';
 import theme from './theme'
-import HomeSwiper from './components/HomeSwiper';
+import Home from './layouts/Home';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
       <Flex direction="column" justify="center" padding={5} >
         <TopNavBar />
       </Flex>
-      <HomeSwiper />
+
+      <Home/>
+      <Box height="3vh" width='auto'/>
     </ChakraProvider>
   );
 }
