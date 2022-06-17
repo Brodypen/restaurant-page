@@ -34,7 +34,7 @@ const HamburgerMenu = ({ onClick }) => {
               Home
             </MenuItem>
             <MenuItem icon={<FaBook />} onClick={() => onClick('Menu')}>
-              Menu
+              My OnlyFans
             </MenuItem>
             <MenuItem icon={<FaInfo />} onClick={() => onClick('Contact')}>
               Contact
