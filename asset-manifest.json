@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/restaurant-page/static/css/main.e328ecc2.css",
+    "main.js": "/restaurant-page/static/js/main.92172b3b.js",
+    "static/js/377.ab961ba6.chunk.js": "/restaurant-page/static/js/377.ab961ba6.chunk.js",
+    "static/media/Donut1.jpg": "/restaurant-page/static/media/Donut1.3bcad6522d3a1f019e83.jpg",
+    "static/media/MDonut2.jpg": "/restaurant-page/static/media/MDonut2.e7af8b0e90e60f2b16e5.jpg",
+    "static/media/Donut2.jpg": "/restaurant-page/static/media/Donut2.66f559fde4f519c5b2df.jpg",
+    "static/media/MDonut3.jpg": "/restaurant-page/static/media/MDonut3.b548056a780cddedba5d.jpg",
+    "static/media/Donut3.jpg": "/restaurant-page/static/media/Donut3.5ea7e8633af07877c8a8.jpg",
+    "static/media/MDonut4.jpg": "/restaurant-page/static/media/MDonut4.9fbc148e7e3b6478df55.jpg",
+    "static/media/Donut4.png": "/restaurant-page/static/media/Donut4.f5bd4751d57a743081f9.png",
+    "static/media/MDonut1.jpg": "/restaurant-page/static/media/MDonut1.9544ff78e4bdd31a8e11.jpg",
+    "static/media/raleway-all-500-normal.woff": "/restaurant-page/static/media/raleway-all-500-normal.39dfbc7e7698ee412617.woff",
+    "static/media/raleway-latin-500-normal.woff2": "/restaurant-page/static/media/raleway-latin-500-normal.663286c6372fc088ce80.woff2",
+    "static/media/lusitana-all-700-normal.woff": "/restaurant-page/static/media/lusitana-all-700-normal.d7e4f7a43cd24cbd97b4.woff",
+    "static/media/raleway-latin-ext-500-normal.woff2": "/restaurant-page/static/media/raleway-latin-ext-500-normal.597e2474095a95f9fa72.woff2",
+    "static/media/raleway-cyrillic-ext-500-normal.woff2": "/restaurant-page/static/media/raleway-cyrillic-ext-500-normal.21340a958d3c21bebbf8.woff2",
+    "static/media/raleway-cyrillic-500-normal.woff2": "/restaurant-page/static/media/raleway-cyrillic-500-normal.d07a9b9580edd95913de.woff2",
+    "static/media/lusitana-latin-700-normal.woff2": "/restaurant-page/static/media/lusitana-latin-700-normal.b2971478d256c66d7c46.woff2",
+    "static/media/raleway-vietnamese-500-normal.woff2": "/restaurant-page/static/media/raleway-vietnamese-500-normal.f705348c06a5bf0815aa.woff2",
+    "index.html": "/restaurant-page/index.html",
+    "main.e328ecc2.css.map": "/restaurant-page/static/css/main.e328ecc2.css.map",
+    "main.92172b3b.js.map": "/restaurant-page/static/js/main.92172b3b.js.map",
+    "377.ab961ba6.chunk.js.map": "/restaurant-page/static/js/377.ab961ba6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e328ecc2.css",
+    "static/js/main.92172b3b.js"
+  ]
+}
