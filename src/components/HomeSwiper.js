@@ -15,7 +15,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import Donut1 from '../pics/Donut1.jpg';
 import Donut2 from '../pics/Donut2.jpg';
 import Donut3 from '../pics/Donut3.jpg';
-import Donut4 from '../pics/Donut4.jpg';
+import Donut4 from '../pics/Donut4.png';
 // Mobile Donut Pics
 import MDonut1 from '../pics/MDonut1.jpg';
 import MDonut2 from '../pics/MDonut2.jpg';
@@ -74,7 +74,7 @@ const HomeSwiper = () => {
 
             <Text
             >
-              Get me a Donut Bobby!
+              It's morbing time
           </Text>
         </SwiperSlide>
       </Swiper>

@@ -6,6 +6,7 @@ import {
   Flex,
   Box,
   useBoolean,
+  Collapse
 } from '@chakra-ui/react';
 import TopNavBar from './components/TopNavBar';
 import theme from './theme'
@@ -36,9 +37,17 @@ function App() {
       <Flex direction="column" justify="center" padding={5}>
         <TopNavBar onClick={onClickLog} />
       </Flex>
-      {home ? <Home /> : <></>}
-      {menu ? <Menu /> : <></>}
-      {contact ? <Contact /> : <></>}
+      <Collapse in={home} animateOpacity unmountOnExit>
+        <Home />
+      </Collapse>
+      <Collapse in={menu} animateOpacity unmountOnExit>
+        <Menu />
+      </Collapse>
+      <Collapse in={contact} animateOpacity unmountOnExit>
+        <Contact />
+      </Collapse>
+      {/* {menu ? <Menu /> : <></>}
+      {contact ? <Contact /> : <></>} */}
       <Box height="3vh" width="auto" />
     </ChakraProvider>
   );

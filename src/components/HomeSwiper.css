@@ -19,7 +19,7 @@
 }
 @media only screen and (max-width: 680px) {
         .swiper-slide p {
-            font-size: 3rem;
+            font-size: 2rem;
             transform: translate(-50%,-75%);
         }
 }
