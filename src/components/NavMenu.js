@@ -9,7 +9,7 @@ const NavMenu = ({onClick}) => {
     <div>
       <HStack>
         <Button leftIcon={<FaHome />} onClick={() => onClick("Home")}>Home</Button>
-        <Button leftIcon={<FaBook />} onClick={() => onClick("Menu")}>My OnlyFans</Button>
+        <Button leftIcon={<FaBook />} onClick={() => onClick("Menu")}>Menu</Button>
        {moveContact ?  <Button leftIcon={<FaInfo />} onClick={() => onClick("Contact")}>Contact</Button>: <></> }
         <HamburgerMenu onClick={onClick}/>
       </HStack>
