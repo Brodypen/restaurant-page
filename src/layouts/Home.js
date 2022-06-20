@@ -9,22 +9,10 @@ const Home = () => {
       <Flex direction="column" justifyContent="center" align="center">
         <Heading margin="0 50px">
           {' '}
-          Telling a gamer to 'touch grass' is not an insult, rather it is advice{' '}
+          Donuts! Donuts! Donuts!{' '}
         </Heading>
-        <Text margin="20px 10vw" fontSize="2xl">
-          "Touch grass" is not an insult towards gamers, rather it is advice for
-          them. When participating in intense periods of gaming, the human hand
-          has a tendency to get sweaty. The sweat causes the hand to become
-          slick, and it becomes more difficult to retain a grip on the gamers
-          gaming mouse, thus making it more difficult to perform well in intense
-          gaming moments. By touching grass with the gamers hand, the grass will
-          impart a layer of particulate onto the gamers hand, the particulate
-          can be made of a variety of dusts, dirts and other natural matter.
-          This particulate will then act in a similar form to climbers chalk,
-          absorbing the sweat and drying out the gamers hand. With dry hands,
-          the gamer can now perform to their maximum when gaming. This is why
-          when an enemy or teammate tells you to touch grass, they are simply
-          trying to assist you in performing better.
+        <Text margin="20px 10vw" fontSize="2xl" textAlign='center'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus eligendi, voluptatum illum iste quam nisi perspiciatis quidem, similique officia, iusto repellendus eaque esse. Repellat temporibus cum sit repudiandae officiis, reprehenderit at! Non minus tempore natus veniam eligendi libero quas animi sit earum rerum nemo delectus quod exercitationem, a architecto sequi vitae provident illum esse dolore sed autem vel blanditiis soluta! Officiis dolor culpa esse laborum odio animi ullam expedita tenetur adipisci distinctio vel quaerat, fuga harum rerum porro molestias voluptatum omnis obcaecati laudantium, voluptate et asperiores excepturi alias accusantium! Quasi, dolore. Esse eligendi, perspiciatis earum natus aspernatur alias enim mollitia quo! Laborum ipsa corrupti magnam, facilis cupiditate esse recusandae odio unde distinctio culpa aut nobis natus dicta commodi doloremque alias.
         </Text>
       </Flex>
     </Flex>
