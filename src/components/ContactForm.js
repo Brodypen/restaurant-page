@@ -18,18 +18,17 @@ const ContactForm = () => {
       <FormControl>
         <FormLabel htmlFor="email">Email Address</FormLabel>
         <Input id="email" type="email" />
-        <FormHelperText>Sign up for OnlyDonuts!</FormHelperText>
+        <FormHelperText>Free Donuts with Signup!</FormHelperText>
       </FormControl>
       <FormControl isRequired>
-        <FormLabel htmlFor="SSN">Social Sercuity Number</FormLabel>
+        <FormLabel htmlFor="SSN">Do you like donuts?</FormLabel>
         <Stack spacing={5} direction="row">
-          <Checkbox colorScheme="red">No</Checkbox>
-          <Checkbox colorScheme="green">No (but green)</Checkbox>
-          <Checkbox colorScheme="yellow">Bob</Checkbox>
+          <Checkbox colorScheme="green">Yes</Checkbox>
+          <Checkbox colorScheme="red">Yes (but red)</Checkbox>
         </Stack>
       </FormControl>
       <FormControl isRequired>
-        <FormLabel htmlFor="FavNum">Favorite 2-Digit Number</FormLabel>
+        <FormLabel htmlFor="FavNum">How much is in a Dozen?</FormLabel>
         <Stack spacing={5} direction="row">
           <PinInput>
             <PinInputField />
@@ -39,16 +38,16 @@ const ContactForm = () => {
       </FormControl>
       <FormControl isRequired>
         <FormLabel htmlFor="FavNum">
-          Pick your favorite Hot-dog catchphrase!
+          Pick your favorite Donut catchphrase!
         </FormLabel>
         <Select>
-            <option value="option1">Wild Whopping Weiner</option>
-            <option value="option2">Giant Glizzer Globber</option>
-            <option value="option3">Sly Succulent Sausage</option>
+            <option value="option1">Dearly Delicious Donuts</option>
+            <option value="option2">Donut Donut...</option>
+            <option value="option3">Good Donut catchphrase...</option>
         </Select>
       </FormControl>
       <Button colorScheme="purple" type='submit'>Submit</Button>
-      <Text fontSize='sm'>(Pretend I put effort into the button)</Text>
+      <Text fontSize='sm'>(Pretend the Form is sent to a website)</Text>
      <Text fontSize='2xl'>Thank you for looking at my website!</Text>
     </Flex>
   );
