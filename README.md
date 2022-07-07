@@ -1,7 +1,7 @@
 # restaurant-page
 Restaurant page for Odin Project using React and Chakra UI  
 #### Reminder! Please make more professional in the future.  
-### [Live Demo](https://frostandice.github.io/restaurant-page)
+### [Live Demo](https://brodypen.github.io/restaurant-page)
 
 #### Technologies
 - HTML
